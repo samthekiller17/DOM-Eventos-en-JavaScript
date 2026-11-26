@@ -3,6 +3,14 @@ const nombre = document.getElementById("esnombre");
     const saludo = document.getElementById("saludo");
     
     btnsaludar.addEventListener("click", function(){
-       const nombre = nombre.value;
+       const sacarnombre = nombre.value.trim();
+       
+       if(sacarnombre === ("")){
+         saludo.textContent = "Escribe tu nombre por favor";
+       }
+       else{
+         saludo.textContent = `¡Hola, ${sacarnombre}! Bienvenid@.`;
+       }
+       
         
     });
