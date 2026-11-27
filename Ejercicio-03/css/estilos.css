@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: aliceblue;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: min(90%, 28rem);
+    padding: 2rem;
+    background-color: rgb(164, 210, 241);
+    border-radius: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+#entrada {
+    height: 8rem;
+    padding: 0.6rem;
+    font-size: 1rem;
+    font-family: inherit;
+    border: none;
+    border-radius: 0.5rem;
+    resize: none;
+}
+
+.etiqueta {
+    font-size: 0.9rem;
+    color: #1d3557;
+}
+
+#vista {
+    min-height: 5rem;
+    padding: 0.8rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow-wrap: anywhere;
+}
